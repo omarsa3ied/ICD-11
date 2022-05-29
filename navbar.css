@@ -50,7 +50,7 @@ body {
     color: #fff;
     display: block;
     margin: 1rem 2rem;
-    font-size: x-large;
+    font-size: large;
 }
 
 .dropcontent,
@@ -189,7 +189,7 @@ main {
 }
 
 .left:hover+main {
-    left: 7em;
+    left: 8em;
     transform: scaleX(-9em);
     transition: transform 0.8s, ;
     width: auto;

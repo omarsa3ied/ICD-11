@@ -5,17 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Structure</title>
+    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="structure.css">
-
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
         integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
 </head>
 <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     <nav class="navbar">
-    
         <div class="right">
             <div class="drophome">
-                <a href="index.html" class="home"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+                <a href="/front page/Rename.html" class="home"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
             </div>
             <div class="dropabout">
                 <a href="#" class="aboutus"><i class="fa fa-address-book" aria-hidden="true"></i>About Us</a>
@@ -47,6 +52,7 @@
                     <a href="history.html" class="boxdesign">Improvements</a>
                     <a href="Structure.html" class="boxdesign">Structure</a>
                     <a href="conc.html" class="boxdesign">Conclusion</a>
+                    <a href="https://icd.who.int/browse11/l-m/en" class="boxdesign">ICD-11 Browser</a>
                 </aside>
                 </div>
             </div>
@@ -56,14 +62,14 @@
 <header>
     <h1 class="topheading" id="title">Structure</h1>
     <br>
-    <p class="topheading">The ICD-11 is a large taxonomy consisting of about 85,000 entities, also called classes or nodes.
+    <p class="topheading" >The ICD-11 is a large taxonomy consisting of about 85,000 entities, also called classes or nodes.
         An entity can be anything that is relevant to health care. It usually represents a disease or a
         pathogen, but it can also be an isolated symptom</p>
     </header>
     <br>
     <br>
     <section>
-        <h1 class="headline">Content Model Building Blocks:</h1>
+        <div data-aos="fade-right" data-aos-delay="500"><h1 class="headline">Content Model Building Blocks:</h1></div>
         <br>
         <P>The WHO Family of International Classifications is a suit of classifications used to describe
             various aspects of the health care system in a consistent manner, with a standardized terminology. It
@@ -71,7 +77,8 @@
             body parts, bodily functions, reasons for visit, medical procedures, microbes, causes of death, social
             circumstances of the patient, and much more</P>
             <br>
-            <img src="/images/content model.png" alt="model">
+            <div data-aos="flip-down" data-aos-duration="1000" ><img  src="/images/content model.png"  alt="model"></div>
+            
         </section>
         <br>
         <br>
@@ -121,7 +128,7 @@
             linearization, such as the Primary Care or Clinical Care. The consistency is ensured by the fact that
             every codable entity in a linearization is linked to its corresponding Foundation entity.</p>
             <br>
-        <img src="/images/linearization.png" alt="linearization">
+        <div data-aos="flip-down" data-aos-duration="1000"><img src="/images/linearization.png" alt="linearization"></div>  
         <br>
         <br>
         <h1 class="headline">Code structure</h1>

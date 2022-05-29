@@ -32,7 +32,7 @@ body{
     color: #fff;
     display: block;
     margin:1rem 2rem;
-    font-size: x-large;
+    font-size: large;
 }
 .sidebarcontent
 {z-index: -1;}
@@ -122,14 +122,14 @@ margin:1em 0em
 header
 {
     position: relative;
-    text-align: center;
-    top: 25vh;
-    display: inline-block;
-    /* Move the element to the right by 50% of the container's width */
-    left: 50%;
-    /* Calculates 50% of the element's width, and moves it by that */
+        text-align: center;
+        top: 25vh;
+        display: inline-block;
+        /* Move the element to the right by 50% of the container's width */
+        left: 50%;
+        /* Calculates 50% of the element's width, and moves it by that */
         /* amount across the X-axis to the left */
-    transform: translateX(-50%);
+        transform: translateX(-50%);
 
     }
 
@@ -150,10 +150,10 @@ header
 h1,h2,h3,.buttons   
 {
     animation-name: slidein;
-    animation-duration: 2s; 
-    animation-timing-function: ease-in-out;
-    text-align: center;
-    display: inline;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        text-align: center;
+        display: inline;
 }
 h1
 {
@@ -219,3 +219,4 @@ font-size: larger;
 font-weight: bold;
 color:#013a63;
 }
+
