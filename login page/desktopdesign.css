@@ -1,0 +1,17 @@
+@media screen and (min-width:67.5em) 
+{
+  h1{
+    margin-bottom: 7rem;
+  }
+  .container 
+    {
+      flex-direction: row;
+    }
+
+  .topdiv 
+    {
+      text-align: center;
+      margin: 0.25em;
+    }
+
+}

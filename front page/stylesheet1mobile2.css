@@ -1,0 +1,17 @@
+@media screen and (min-width:37.5em)
+{
+    #img1,
+    #img2 {
+    top: 5%;
+    width: 15%;
+    }
+    
+    header {
+    top: 20vh;
+    
+    }
+    .together {
+    top: 10vh;
+    }
+
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structure</title>
+    <link rel="stylesheet" href="structure.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar">
+    
+        <div class="right">
+            <div class="drophome">
+                <a href="index.html" class="home"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+            </div>
+            <div class="dropabout">
+                <a href="#" class="aboutus"><i class="fa fa-address-book" aria-hidden="true"></i>About Us</a>
+                <div class="dropdownabout">
+                    <a href="#" class="boxdesign">Maram Tarek</a>
+                    <a href="#" class="boxdesign">Mariam Gamal</a>
+                    <a href="#" class="boxdesign">Omar Saied</a>
+                    <a href="#" class="boxdesign">Rabie Ashraf</a>
+                    <a href="#" class="boxdesign">Youssef Wael</a>
+                </div>
+            </div>
+            <div class="dropcontact">
+                <a href="#" class="contactus"><i class="fa fa-link" aria-hidden="true"></i>Contact Us</a>
+                <div class="dropdowncontact">
+                    <a href="https://github.com/" class="boxdesign"><i class="fa fa-github"
+                            aria-hidden="true"></i>GitHub</a>
+                    <a href="https://www.linkedin.com/" class="boxdesign"><i class="fa fa-linkedin"
+                            aria-hidden="true"></i>LinkedIn</a>
+                </div>
+            </div>    
+            </nav>
+        <div class="left">
+            <div class="sidebar">
+                <a href="#content" class="sidebarcontent"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                <aside>
+                    <div class="dropcontent" id="content">
+                    <a href="intro.html" class="boxdesign">Introduction</a>
+                    <a href="history.html" class="boxdesign">History</a>
+                    <a href="history.html" class="boxdesign">Improvements</a>
+                    <a href="Structure.html" class="boxdesign">Structure</a>
+                    <a href="conc.html" class="boxdesign">Conclusion</a>
+                </aside>
+                </div>
+            </div>
+        </div>
+    
+    <main>
+<header>
+    <h1 class="topheading" id="title">Structure</h1>
+    <br>
+    <p class="topheading">The ICD-11 is a large taxonomy consisting of about 85,000 entities, also called classes or nodes.
+        An entity can be anything that is relevant to health care. It usually represents a disease or a
+        pathogen, but it can also be an isolated symptom</p>
+    </header>
+    <br>
+    <br>
+    <section>
+        <h1 class="headline">Content Model Building Blocks:</h1>
+        <br>
+        <P>The WHO Family of International Classifications is a suit of classifications used to describe
+            various aspects of the health care system in a consistent manner, with a standardized terminology. It
+            is a collection of over hundred thousand entities which are used to describe diseases, disorders,
+            body parts, bodily functions, reasons for visit, medical procedures, microbes, causes of death, social
+            circumstances of the patient, and much more</P>
+            <br>
+            <img src="/images/content model.png" alt="model">
+        </section>
+        <br>
+        <br>
+        <article>
+            <details class="subheading">
+                <summary> Entities</summary>
+            <br>
+            <p class="subheading">The basic building block of the Content Model is the entity. and it can be of different types (e.g.,
+                disease, disorder, sign and symptoms, functioning descriptor, intervention, extension code). An
+                entity is identified by a unique Uniform Resource Identifier (URI). Entities are described by multiple
+                parameters, also referred to as properties or attributes.
+                Building Blocks</p></details>
+            </article>
+            <br><br>
+            <article>
+                <details class="subheading"><summary>Hierarchy</summary>
+                <br>
+                Entities are organized in a hierarchical structure A child entity is a more specialized concept than
+                    the parent entity. A child entity can have multiple parents in the Foundation Component. A child can
+                    have a set of direct parents.</details>
+                
+                </article>
+                <br>
+                <br>
+                <article>
+                    <details class="subheading">
+                        <summary>Terms </summary>
+                    <br>
+                    <p class="subheading">The term contains a textual value, called a label and a language identifier. It could contain
+                        additional information</p></details>
+                        <br>
+                        <br>
+                        <h2 class="headline">External References</h2>
+                        <br>
+                        <p>Linkages added to external classifications or terminologies at the entity level for specification.
+                            External references usually contain the label, the language identifier, the external entity identifier,
+                            the name of the external resource, and a URI link to the linked external resource.</p>
+                        </article>
+                            <br>
+                            <br>
+
+                        <section>
+        <h1 class="headline">Linearization</h1>
+        <br>
+        <p>Linearization is a constrained subset of the Foundation Component, which serves a particular
+            purpose. For example, the ICD-11 MMS can be used for statistical reporting purposes, while other
+            linearization, such as the Primary Care or Clinical Care. The consistency is ensured by the fact that
+            every codable entity in a linearization is linked to its corresponding Foundation entity.</p>
+            <br>
+        <img src="/images/linearization.png" alt="linearization">
+        <br>
+        <br>
+        <h1 class="headline">Code structure</h1>
+        <br>
+        <p>The codes of the ICD–11 is alphanumeric and are referred to as stem codes. The structure of
+            stem codes is described below:</p>
+            <ul>
+                <li>The first character of the code always relates to the chapter number. It may be a number or
+                    a letter.</li>
+                    <li>Codes starting with ‘X’ indicate an extension code</li>
+                    <li>There is always a letter in the second position to differentiate ICD-11 codes from the codes
+                        in ICD–10</li>
+                        <li>The inclusion of a forced number at the third character position prevents spelling
+                            undesirable words.</li>
+                            <li>The letters ‘O’ and ‘I’ are omitted to prevent confusion with the numbers ‘0’ and ‘1’</li>
+            </ul>
+        </section>
+        <br>
+        <br>
+            <section>
+            <h1 class="headline">Stem codes</h1>
+            <br>
+            <p>Codes in the Tabular list of ICD-11 that can be used alone. Stem codes may be entities or
+                groupings of high relevance in any of the use cases, or clinical conditions that should always be
+                described as one single category. Stem codes are designed to ensure that in use cases that require
+                only one code per case, meaningful information is collected.</p>
+            </section>
+            <br>
+            <br>
+            <section>
+                <h1 class="headline">Post-coordination and Pre-coordination</h1>
+                <br>
+                <p>The post-coordination system allows adding more detail to an entity in a linearization.
+                    Meanwhile, the pre-coordinated entity is formed by combining the parent with the post-
+                    coordination axis</p>
+                </section>
+                <br>
+                <br>
+                <section>
+                    <h1 class="headline">Extension Codes</h1>
+                    <br>
+                    <p>Extension codes are comprised of groups of codes that contain entity hierarchies and may be
+                        used to add detail to a stem code. Extension codes are not to be used alone in the context of
+                        statistical classification but must be added to a stem code. Also, it can be used as value sets for post-
+                        coordination axes</p>
+                    <img src="/images/drwoman.png" alt="woman">
+                    </section>
+                    <br>
+                    <br>
+                </main>
+</body>
+</html>
