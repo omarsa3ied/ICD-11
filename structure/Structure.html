@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Structure</title>
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="structure.css">
+    <link rel="stylesheet" href="/navbar.css">
+    <link rel="stylesheet" href="/structure/structure.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
         integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -60,80 +60,98 @@
     
     <main>
 <header>
-    <h1 class="topheading" id="title">Structure</h1>
+    <h1 class="topheading" id="title">
+        <span style="--i:1;">S</span>
+        <span style="--i:2;">t</span>
+        <span style="--i:3;">r</span>
+        <span style="--i:4;">u</span>
+        <span style="--i:5;">c</span>
+        <span style="--i:6;">t</span>
+        <span style="--i:7;">u</span>
+        <span style="--i:8;">r</span>
+        <span style="--i:9;">e</span>
+    </h1>
     <br>
-    <p class="topheading" >The ICD-11 is a large taxonomy consisting of about 85,000 entities, also called classes or nodes.
+    <p class="topheading" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">The ICD-11 is a large taxonomy consisting of about 85,000 entities, also called classes or nodes.
         An entity can be anything that is relevant to health care. It usually represents a disease or a
         pathogen, but it can also be an isolated symptom</p>
     </header>
     <br>
     <br>
+    <main>
     <section>
-        <div data-aos="fade-right" data-aos-delay="500"><h1 class="headline">Content Model Building Blocks:</h1></div>
+        <div class="headline" data-aos="fade-right" data-aos-delay="500"><h1 >Content Model Building Blocks:</h1></div>
         <br>
-        <P>The WHO Family of International Classifications is a suit of classifications used to describe
+        <div data-aos="fade-down" data-aos-delay="500"><p class="headlinetext">The WHO Family of International Classifications is a suit of classifications used to describe
             various aspects of the health care system in a consistent manner, with a standardized terminology. It
             is a collection of over hundred thousand entities which are used to describe diseases, disorders,
             body parts, bodily functions, reasons for visit, medical procedures, microbes, causes of death, social
-            circumstances of the patient, and much more</P>
+            circumstances of the patient, and much more</p></div>
             <br>
-            <div data-aos="flip-down" data-aos-duration="1000" ><img  src="/images/content model.png"  alt="model"></div>
+            <div data-aos="flip-down" data-aos-duration="500" ><img  src="/images/content model.png"  alt="model"></div>
             
         </section>
         <br>
         <br>
-        <article>
+        
+        <article class="arrowedtext">
+            <div data-aos="slide-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1000" >
             <details class="subheading">
-                <summary> Entities</summary>
+                <summary > Entities</summary>
             <br>
-            <p class="subheading">The basic building block of the Content Model is the entity. and it can be of different types (e.g.,
+            <p class="subtext" >The basic building block of the Content Model is the entity. and it can be of different types (e.g.,
                 disease, disorder, sign and symptoms, functioning descriptor, intervention, extension code). An
                 entity is identified by a unique Uniform Resource Identifier (URI). Entities are described by multiple
                 parameters, also referred to as properties or attributes.
                 Building Blocks</p></details>
+            </div>
             </article>
             <br><br>
             <article>
+                <div data-aos="slide-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1000">
                 <details class="subheading"><summary>Hierarchy</summary>
                 <br>
-                Entities are organized in a hierarchical structure A child entity is a more specialized concept than
+                <p class="subtext">Entities are organized in a hierarchical structure A child entity is a more specialized concept than
                     the parent entity. A child entity can have multiple parents in the Foundation Component. A child can
-                    have a set of direct parents.</details>
-                
+                    have a set of direct parents.</p></details></div>
                 </article>
                 <br>
                 <br>
                 <article>
+                    <div data-aos="slide-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1000">
                     <details class="subheading">
                         <summary>Terms </summary>
                     <br>
-                    <p class="subheading">The term contains a textual value, called a label and a language identifier. It could contain
+                    <p class="subtext">The term contains a textual value, called a label and a language identifier. It could contain
                         additional information</p></details>
                         <br>
                         <br>
-                        <h2 class="headline">External References</h2>
+                        <div class="headline" data-aos="fade-right" data-aos-delay="500">
+                        <h2 class="headline">External References</h2></div>
                         <br>
-                        <p>Linkages added to external classifications or terminologies at the entity level for specification.
+                        <div data-aos="fade-down" data-aos-delay="500"><p class="headlinetext">Linkages added to external classifications or terminologies at the entity level for specification.
                             External references usually contain the label, the language identifier, the external entity identifier,
-                            the name of the external resource, and a URI link to the linked external resource.</p>
+                            the name of the external resource, and a URI link to the linked external resource.</p></div>
                         </article>
                             <br>
                             <br>
-
                         <section>
-        <h1 class="headline">Linearization</h1>
+        <div class="headline" data-aos="fade-right" data-aos-delay="500">
+        <h1 class="headline">Linearization</h1></div>
         <br>
-        <p>Linearization is a constrained subset of the Foundation Component, which serves a particular
+        <div data-aos="fade-down" data-aos-delay="500"><p class="headlinetext">Linearization is a constrained subset of the Foundation Component, which serves a particular
             purpose. For example, the ICD-11 MMS can be used for statistical reporting purposes, while other
             linearization, such as the Primary Care or Clinical Care. The consistency is ensured by the fact that
-            every codable entity in a linearization is linked to its corresponding Foundation entity.</p>
+            every codable entity in a linearization is linked to its corresponding Foundation entity.</p></div>
             <br>
-        <div data-aos="flip-down" data-aos-duration="1000"><img src="/images/linearization.png" alt="linearization"></div>  
+        <div data-aos="flip-down" data-aos-duration="1000" data-aos-delay="500" ><img src="/images/linearization.png" alt="linearization"></div>  
         <br>
         <br>
         <h1 class="headline">Code structure</h1>
         <br>
-        <p>The codes of the ICD–11 is alphanumeric and are referred to as stem codes. The structure of
+        <div data-aos="fade-down" data-aos-delay="500"><p class="headlinetext">The codes of the ICD–11 is alphanumeric and are referred to as stem codes. The structure of
             stem codes is described below:</p>
             <ul>
                 <li>The first character of the code always relates to the chapter number. It may be a number or
@@ -144,37 +162,40 @@
                         <li>The inclusion of a forced number at the third character position prevents spelling
                             undesirable words.</li>
                             <li>The letters ‘O’ and ‘I’ are omitted to prevent confusion with the numbers ‘0’ and ‘1’</li>
-            </ul>
+            </ul></div>
         </section>
         <br>
         <br>
             <section>
-            <h1 class="headline">Stem codes</h1>
+                <div class="headline" data-aos="fade-right" data-aos-delay="500">
+            <h1 class="headline">Stem codes</h1></div>
             <br>
-            <p>Codes in the Tabular list of ICD-11 that can be used alone. Stem codes may be entities or
+            <div data-aos="fade-down" data-aos-delay="500"><p class="headlinetext">Codes in the Tabular list of ICD-11 that can be used alone. Stem codes may be entities or
                 groupings of high relevance in any of the use cases, or clinical conditions that should always be
                 described as one single category. Stem codes are designed to ensure that in use cases that require
-                only one code per case, meaningful information is collected.</p>
+                only one code per case, meaningful information is collected.</p></div>
             </section>
             <br>
             <br>
             <section>
-                <h1 class="headline">Post-coordination and Pre-coordination</h1>
+                <div class="headline" data-aos="fade-right" data-aos-delay="500">
+                    <h1 class="headline">Post-coordination and Pre-coordination</h1></div>
                 <br>
-                <p>The post-coordination system allows adding more detail to an entity in a linearization.
+                <p class="headlinetext">The post-coordination system allows adding more detail to an entity in a linearization.
                     Meanwhile, the pre-coordinated entity is formed by combining the parent with the post-
-                    coordination axis</p>
+                    coordination axis</p></div>
                 </section>
                 <br>
                 <br>
                 <section>
-                    <h1 class="headline">Extension Codes</h1>
+                    <div class="headline" data-aos="fade-right" data-aos-delay="500"><h1 class="headline">Extension Codes</h1></div>
                     <br>
-                    <p>Extension codes are comprised of groups of codes that contain entity hierarchies and may be
+                    <div data-aos="fade-down" data-aos-delay="500"><p class="headlinetext">Extension codes are comprised of groups of codes that contain entity hierarchies and may be
                         used to add detail to a stem code. Extension codes are not to be used alone in the context of
                         statistical classification but must be added to a stem code. Also, it can be used as value sets for post-
-                        coordination axes</p>
-                    <img src="/images/drwoman.png" alt="woman">
+                        coordination axes</p></div>
+                        <div data-aos="flip-down" data-aos-duration="500" data-aos-delay="500">
+                    <img src="/images/drwoman.png" alt="woman"></div>   
                     </section>
                     <br>
                     <br>

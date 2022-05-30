@@ -133,7 +133,7 @@ header
 
     }
 
-@keyframes slidein
+/*@keyframes slidein
 {
     0%
     { 
@@ -145,7 +145,7 @@ header
     transform: translateY(0%); 
     opacity: 1;
     }
-}
+}*/
 
 h1,h2,h3,.buttons   
 {
