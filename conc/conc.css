@@ -73,9 +73,31 @@ article
     display: block;
     padding-top: 40vh;
 }
+#recommend
+{
+
+    animation-name: floating;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+}
 #endingsentence
 {
-    padding-top: 5vh;
-    font-size: larger;
-    font-weight: 100;
+        padding-top: 5vh;
+            font-size: larger;
+            font-weight: 100;
+}
+
+@keyframes floating {
+    from {
+        transform: translate(0, 0px);
+    }
+
+    65% {
+        transform: translate(0, 15px);
+    }
+
+    to {
+        transform: translate(0, -0px);
+    }
 }
