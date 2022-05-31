@@ -3,85 +3,73 @@ main {
     padding: 1rem;
     box-sizing: border-box;
     width: fit-content;
-    padding: 0.25em
+    padding: .25em
 }
+
 header>h1 {
     position: relative;
-    top:2vh;
+    top: 2vh;
     font-size: 3rem;
-    /*animation-name: maximize;
-    animation-duration: 2s;*/
-    text-align: center;
+    text-align: center
 }
-#why
-{
-    position: relative;    
+
+#why {
+    position: relative;
     top: 100vh;
     padding-top: 100vh;
     box-sizing: border-box;
-    right:20vw;
+    right: 20vw
 }
-h2
-{
+
+h2 {
     text-align: center;
-    font-stretch:expanded;
+    font-stretch: expanded;
     box-sizing: border-box;
     padding-bottom: 10%;
-    font-size: 6vw;
+    font-size: 6vw
 }
-.wavyintro
-{
+
+.wavyintro {
     padding-top: 70vh;
     display: block;
-    margin: auto;
+    margin: auto
 }
-.wavyintro span{
+
+.wavyintro span {
     position: relative;
     display: inline-block;
     font-size: 10vw;
     animation-name: wave;
-    animation-duration:2s;
-    animation-timing-function: ease-in-out ;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-delay: calc(0.1s*var(--i));
-}
-@keyframes wave {
-    0%{
-        transform: translateY(0%);
-    }
-    20%{
-        transform: translateY(-20%);
-    }
-    40%,100%
-    {
-        transform: translateY(0%);
-    }
-    
-}
-#dr
-{
-    position:absolute;
-    bottom:0vh;
-    left: 85vw;;
-}
-#table
-{
-position: relative;
-border-radius: 5em;
-padding: 6rem;
-bottom: 2.5em;
-width: 40vw;
-display: block;
-margin: auto;
-}
-header{
-    position: relative;
-    bottom:30vh;
+    animation-delay: calc(.1s*var(--i))
 }
 
-article
-{
+#dr {
+    position: absolute;
+    bottom: 0;
+    left: 85vw
+}
+
+#table {
+    position: relative;
+    border-radius: 5em;
+    padding: 6rem;
+    bottom: 2.5em;
+    width: 40vw;
+    display: block;
+    margin: auto
+}
+
+header {
+    position: relative;
+    bottom: 30vh
+}
+
+article {
     position: relative;
     padding-top: 100vh;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
+

@@ -1,87 +1,63 @@
-
 #title {
-    padding: 30vh;
-    box-sizing: border-box  ;
-    display: block;
-    margin: auto;
+    padding: 35vh;
+    box-sizing: border-box ;
+    text-align: center;
+    
 }
 
 #title span {
     position: relative;
     display: inline-block;
-    font-size: 10vw;
+    font-size: 8vw;
     animation-name: wave;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-delay: calc(0.1s*var(--i));
+    animation-delay: calc(.1s*var(--i))
 }
 
-@keyframes wave {
-    0% {
-        transform: translateY(0%);
-    }
-
-    20% {
-        transform: translateY(-20%);
-    }
-
-    40%,
-    100% {
-        transform: translateY(0%);
-    }
-
-}
-#title
-{
-    margin-top: 3vh;
-    font-size: 4vh;
-}
-
-.topheading
-{
+.topheading {
     position: relative;
     display: inline-block;
-    margin-top: 30vh;
-    margin-bottom: 40vh;
     padding: 10vw;
     box-sizing: border-box;
     text-align: center;
-    font-size: 5vh;
+    font-size: 5vh
 }
-.subheading
-{
+
+.subheading {
     position: relative;
-    padding-left:2em;
+    padding-left: 2em;
     font-size: x-large;
-    font-weight: bold;
+    font-weight: 700;
     animation-name: maximize;
-    animation-duration: 2s;
+    animation-duration: 2s
 }
+
 img {
     position: relative;
-    left:30%;
-    width:35%;
-    /*animation-name:rotate ;
-    animation-duration: 1s;*/
+    left: 30%;
+    width: 35%
 }
-.headline
-{
+
+.headline {
     padding-left: 3vw;
-    padding-top:3vw;
+    padding-top: 3vw;
     padding-bottom: 1vw;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
-.headlinetext ,  ul
-{
+
+.headlinetext,
+ul {
     padding-left: 6vw;
     padding-right: 6vw;
     padding-bottom: 4vh;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
-.subtext{
+
+.subtext {
     font-weight: lighter;
     padding-left: 6vw;
     padding-right: 6vw;
-    box-sizing: border-box;
+    box-sizing: border-box
 }

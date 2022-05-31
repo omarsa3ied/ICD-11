@@ -191,3 +191,28 @@ main {
     transition: transform 0.8s, ;
     width: auto;
 }
+#next {
+    position: relative;
+    display: block;
+    font-size: 3vw;
+    width: 100%;
+    left: 80%;
+    padding-bottom: 5vh;
+    box-sizing: border-box;
+    color: aliceblue;
+    text-decoration: none;
+}
+@keyframes wave {
+    0% {
+        transform: translateY(0)
+    }
+
+    20% {
+        transform: translateY(-20%)
+    }
+
+    100%,
+    40% {
+        transform: translateY(0)
+    }
+}

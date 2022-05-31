@@ -1,0 +1,42 @@
+main{
+    overflow-x: hidden;
+}
+#maintitle
+{
+    padding:45vh;
+    text-align: center;
+}
+
+#maintitle span {
+    position: relative;
+    display: inline-block;
+    font-size: 6vw;
+    animation-name: wave;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: calc(.1s*var(--i))
+}
+#next
+{
+    bottom:0%;
+}
+h1
+{
+    padding:2vw;
+    box-sizing: border-box;
+}
+.box
+{
+    width:50vw;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+}
+#box2
+{
+    position: relative;
+    margin-left: auto;
+}
+p{
+    width: fit-content;
+}

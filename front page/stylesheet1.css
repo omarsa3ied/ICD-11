@@ -1,222 +1,247 @@
 * {
-    margin: 0% ;
+    margin: 0
 }
-body{
+
+body {
     background: linear-gradient(#012a4a, #013a63, #01497c, #014f86, #2a6f97, #2c7da0, #468faf, #61a5c2, #89c2d9, #a9d6e5);
     background-attachment: fixed;
-    color: aliceblue;   
-    overflow: hidden;
+    color: #f0f8ff;
+    overflow: hidden
 }
-.navbar
-{
+
+.navbar {
     position: fixed;
-    border-radius: 0.5rem;
-    box-shadow: 0em 0em 0.5em white;
-    background: linear-gradient(#a9d6e5,#89c2d9,#61a5c2,#468faf,#2c7da0,#014f86,#01497c,#013a63,#013a63);
+    border-radius: .5rem;
+    box-shadow: 0 0 .5em #fff;
+    background: linear-gradient(#a9d6e5, #89c2d9, #61a5c2, #468faf, #2c7da0, #014f86, #01497c, #013a63, #013a63);
     display: flex;
-    width: 100%;
-}
-.left,.right
-{
-    position:relative;
-    display: flex;
+    width: 100%
 }
 
-.right
-{
-    margin-left: auto;
+.left,
+.right {
+    position: relative;
+    display: flex
 }
 
-.sidebarcontent, .sidecontent a, .drophome a,.dropcontact a ,.dropcontent a,.dropabout a, .login a, .signup a{
+.right {
+    margin-left: auto
+}
+
+.dropabout a,
+.dropcontact a,
+.dropcontent a,
+.drophome a,
+.login a,
+.sidebarcontent,
+.signup a {
     text-decoration: none;
     color: #fff;
     display: block;
-    margin:1rem 2rem;
-    font-size: large;
+    margin: 1rem 2rem;
+    font-size: large
 }
-.sidebarcontent
-{z-index: -1;}
 
-.dropcontent,.dropabout,.dropcontact
-{
-    position: relative;
-    z-index: 1;
+.sidebarcontent {
+    z-index: -1
 }
-.dropcontent,.dropdownabout,.dropdowncontact,.sidecontent {
+
+.dropabout,
+.dropcontact,
+.dropcontent {
+    position: relative;
+    z-index: 1
+}
+
+.dropcontent,
+.dropdownabout,
+.dropdowncontact {
     position: absolute;
-    width:100%;
+    width: 100%;
     display: none;
     z-index: 1;
-    border-radius: 0.5rem;
+    border-radius: .5rem
 }
-.dropcontent a,.dropdownabout a,.dropdowncontact a 
-{
+
+.dropcontent a,
+.dropdownabout a,
+.dropdowncontact a {
     color: #012a4a;
     text-align: center;
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 0.5rem;
+    padding: .5rem;
     box-sizing: border-box;
-    border-radius: 0.5rem;
-}
-.dropcontent
-{
-    position: fixed;
-    width:max-content;
-    height: 100vh;
-}
-.dropcontent a
-{
-text-align: left;
-display: block;
-height: fit-content;
-margin:1em 0em
+    border-radius: .5rem
 }
 
-.sidebar:hover .dropcontent ,.dropabout:hover .dropdownabout ,.dropcontact:hover .dropdowncontact ,.left:hover .sidecontent
-{
+.dropcontent {
+    position: fixed;
+    width: max-content;
+    height: 100vh
+}
+
+.dropcontent a {
+    text-align: left;
+    display: block;
+    height: fit-content;
+    margin: 1em 0
+}
+
+.dropabout:hover .dropdownabout,
+.dropcontact:hover .dropdowncontact,
+.sidebar:hover .dropcontent {
     cursor: pointer;
     background: #fff;
     display: block;
     animation-name: maximize;
-    animation-duration: 1s;
+    animation-duration: 1s
 }
 
-.sidebar:hover .dropcontent
-{
+.sidebar:hover .dropcontent {
     cursor: pointer;
     background: #fff;
     display: block;
     animation-name: slideright;
-    animation-duration: 1s;
+    animation-duration: 1s
 }
+
 @keyframes slideright {
-    from{
-    transform: translateX(-100%);
-    opacity: 0;
+    from {
+        transform: translateX(-100%);
+        opacity: 0
     }
-    to{
-    transform: translateX(0%);
-    opacity: 1;
+
+    to {
+        transform: translateX(0);
+        opacity: 1
     }
 }
+
 @keyframes maximize {
     0% {
-            transform: translateY(0%);
-            transform: scaleZ(0%);
-            opacity: 0;
-        }
-    
-        100% {
-            transform: translateY(100%);
-            transform: scaleZ(50%);
-            opacity: 1;
-        }
+        transform: translateY(0);
+        transform: scaleZ(0);
+        opacity: 0
+    }
+
+    100% {
+        transform: translateY(100%);
+        transform: scaleZ(50%);
+        opacity: 1
+    }
 }
-.dropcontent  a:hover,.dropdownabout a:hover, .dropdowncontact a:hover, .sidecontent a:hover ,.buttons a:hover
-{
+
+.buttons a:hover,
+.dropcontent a:hover,
+.dropdownabout a:hover,
+.dropdowncontact a:hover {
     background: #012a4a;
-    color: #fff;
+    color: #fff
 }
-header
+
+.buttons a:hover
 {
+    box-shadow: 0 0 .5em #fff
+}
+
+header {
     position: relative;
-        text-align: center;
-        top: 25vh;
-        display: inline-block;
-        /* Move the element to the right by 50% of the container's width */
-        left: 50%;
-        /* Calculates 50% of the element's width, and moves it by that */
-        /* amount across the X-axis to the left */
-        transform: translateX(-50%);
-
-    }
-
-/*@keyframes slidein
-{
-    0%
-    { 
-    transform: translateY(-100%);
-    opacity: 0;
-    }
-    100% 
-    {
-    transform: translateY(0%); 
-    opacity: 1;
-    }
-}*/
-
-h1,h2,h3,.buttons   
-{
-    /*animation-name: slidein;
-        animation-duration: 2s;
-        animation-timing-function: ease-in-out;*/
-        text-align: center;
-        display: inline;
+    text-align: center;
+    top: 25vh;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%)
 }
-h1
-{
-    font-size: 500%;
-}
-h2
-{
-    font-size: 400%;
-}
+
+.buttons,
+h1,
+h2,
 h3 {
-    font-size: 300%;
+    text-align: center;
+    display: inline
 }
 
-#img1, #img2
-{
-    position: absolute;    
+h1 {
+    font-size: 500%
+}
+
+h2 {
+    font-size: 400%
+}
+
+h3 {
+    font-size: 300%
+}
+
+#img1,
+#img2 {
+    position: absolute;
     z-index: -1;
     top: 15%;
-    width: 20%;
+    width: 20%
 }
-#img1
-{
-    right: 10%;
+
+#img1 {
+    right: 10%
 }
-#img2
-{
-    left:10%;
+
+#img2 {
+    left: 10%
 }
-#img3
-{
+
+#img3 {
     position: absolute;
-    top:40%;
+    top: 40%;
     width: 40%;
-    left:30vw;    
+    left: 30vw
 }
-.together
-{
+
+.together {
     position: relative;
-    top:25vh;
+    top: 25vh
 }
-#img4
-{
+
+#img4 {
     position: absolute;
     width: 40%;
     right: 15vw;
-    top: 4rem;
+    top: 4rem
 }
-.buttons
-{
+
+.buttons {
     position: relative;
     top: 27vh;
     display: flex;
-    justify-content: center;
-}
-.buttons a
-{
-background:#fff ;
-margin:2%;
-text-decoration:none;
-border-radius: 1rem;
-padding: 1%;
-font-size: larger;
-font-weight: bold;
-color:#013a63;
+    justify-content: center ;   
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
+.buttons a {
+    background: #fff;
+    margin: 2%;
+    text-decoration: none;
+    border-radius: 1rem;
+    padding: 1%;
+    font-size: larger;
+    font-weight: 700;
+    color: #013a63
+}
+
+@keyframes floating {
+    from {
+        transform: translate(0, 0px);
+    }
+
+    65% {
+        transform: translate(0, 15px);
+    }
+
+    to {
+        transform: translate(0, -0px);
+    }
+}

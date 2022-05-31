@@ -1,0 +1,48 @@
+#title1{
+    padding: 40vh;
+    text-align: center;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+#title1 span {
+    position: relative;
+    display: inline-block;
+    font-size: 8vw;
+    animation-name: wave;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: calc(.1s*var(--i))
+}
+#paragraph1, #paragraph2
+{
+width: 70vw;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    text-align: center;
+    margin: auto;
+}
+
+p {
+    width: fit-content;
+}
+
+#subtitle{
+    padding:2vw;
+    box-sizing: border-box ;
+}
+#paragraph3{
+    padding-left: 2vw;
+    box-sizing: border-box;
+}
+img{
+    position: relative;
+    left:30vw;
+    width: 30vw;
+    padding-top: 3vh;
+    box-sizing: border-box;
+    border-radius: 4em;
+}
