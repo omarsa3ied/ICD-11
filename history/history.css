@@ -1,10 +1,12 @@
-#title1{
-    padding: 40vh;
+#title1 {
+    padding-top: 38vh;
+    padding-bottom: 45vh;
     text-align: center;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
-body{
-    overflow-x: hidden;
+
+body {
+    overflow-x: hidden
 }
 
 #title1 span {
@@ -17,32 +19,41 @@ body{
     animation-iteration-count: infinite;
     animation-delay: calc(.1s*var(--i))
 }
-#paragraph1, #paragraph2
-{
-width: 70vw;
+
+#paragraph1,
+#paragraph2 {
+    width: 70vw;
     padding-top: 5vh;
     padding-bottom: 10vh;
     text-align: center;
-    margin: auto;
+    margin: auto
 }
 
 p {
-    width: fit-content;
+    width: fit-content
 }
 
-#subtitle{
-    padding:2vw;
-    box-sizing: border-box ;
+#subtitle {
+    padding: 2vw;
+    box-sizing: border-box
 }
-#paragraph3{
+
+#paragraph3 {
     padding-left: 2vw;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
-img{
+
+img {
     position: relative;
-    left:30vw;
+    left: 30vw;
     width: 30vw;
     padding-top: 3vh;
     box-sizing: border-box;
-    border-radius: 4em;
+    border-radius: 4em
+}
+
+#history{
+    position: relative;
+    width:15vw;
+    left:5vw;
 }

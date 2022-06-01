@@ -1,0 +1,21 @@
+@media screen and (min-width:25em) {
+    .topdiv {
+        width: 20rem;
+        height: 15rem;
+        margin-bottom: 15rem;
+        font-size: 2rem
+    }
+
+    div i {
+        font-size: 5rem
+    }
+
+    .dropdiv {
+        padding-top: 2rem;
+        box-sizing: border-box
+    }
+
+    h1 {
+        margin-bottom: 4rem
+    }
+}

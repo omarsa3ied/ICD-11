@@ -30,7 +30,7 @@ h2 {
 }
 
 .wavyintro {
-    padding-top: 70vh;
+    padding-top: 63vh;
     display: block;
     margin: auto
 }
@@ -38,7 +38,7 @@ h2 {
 .wavyintro span {
     position: relative;
     display: inline-block;
-    font-size: 10vw;
+    font-size: 8vw;
     animation-name: wave;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
@@ -49,7 +49,8 @@ h2 {
 #dr {
     position: absolute;
     bottom: 0;
-    left: 85vw
+    left: 85vw;
+    width: 25vw
 }
 
 #table {
@@ -67,9 +68,44 @@ header {
     bottom: 30vh
 }
 
-article {
+#article {
     position: relative;
     padding-top: 100vh;
     box-sizing: border-box
 }
 
+#ascrollicon {
+    padding-top: 35vh;
+    position: relative;
+    /*top:-35vh;*/
+    font-size: 4vh;
+    text-align: center;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out
+}
+
+#ascrollicon a {
+    color: aliceblue;
+    text-decoration: none
+}
+
+@keyframes floating {
+    from {
+        transform: translate(0, 0)
+    }
+
+    65% {
+        transform: translate(0, 15px)
+    }
+
+    to {
+        transform: translate(0, -0)
+    }
+}
+#anotherdr{
+    position: absolute;
+    left:70vw;
+    top:50vh;
+}

@@ -1,42 +1,67 @@
-main{
-    overflow-x: hidden;
+main {
+    overflow-x: hidden
 }
-#maintitle
-{
-    padding:45vh;
+
+#maintitle {
+    padding-top: 35vh;
+    padding-bottom: 45vh;
     text-align: center;
+    box-sizing: border-box
 }
 
 #maintitle span {
     position: relative;
     display: inline-block;
-    font-size: 6vw;
+    font-size: 8vw;
     animation-name: wave;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-delay: calc(.1s*var(--i))
 }
-#next
-{
-    bottom:0%;
+
+#next {
+    bottom: 0
 }
-h1
-{
-    padding:2vw;
-    box-sizing: border-box;
-}
-.box
-{
-    width:50vw;
+
+.box {
+    width: 50vw;
     padding-top: 5vh;
-    padding-bottom: 10vh;
+    padding-bottom: 10vh
 }
-#box2
-{
+
+#box2 {
     position: relative;
-    margin-left: auto;
+    margin-left: auto
 }
-p{
-    width: fit-content;
+
+p {
+    width: fit-content
+}
+
+#walking {
+    position: relative;
+    width: 30%;
+    left: 60vw;
+    top: -50vh;
+    border-radius: 5rem
+}
+
+#coding {
+    width: 30%;
+    border-radius: 5rem;
+    position: relative;
+    top: -25vh
+}
+
+#book {
+    position: relative;
+    width: 30%;
+    left: 60vw;
+    top: -40vh;
+    border-radius: 5rem
+}
+#improveimg
+{
+    width:20vw;
 }

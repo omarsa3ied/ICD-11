@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,17 +12,17 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
         integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head> 
+</head>
+
 <body>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
     <nav class="navbar">
-    
         <div class="right">
             <div class="drophome">
-                <a href="/front page/frontpage.html" class="home"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+                <a href="/frontpage/frontpage.html" class="home"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
             </div>
             <div class="dropabout">
                 <a href="#" class="aboutus"><i class="fa fa-address-book" aria-hidden="true"></i>About Us</a>
@@ -42,6 +43,7 @@
                             aria-hidden="true"></i>LinkedIn</a>
                 </div>
             </div>
+        </div>
     </nav>
     <div class="left">
         <div class="sidebar">
@@ -50,55 +52,64 @@
                 <div class="dropcontent" id="content">
                     <a href="/intro/intro.html" class="boxdesign">Introduction</a>
                     <a href="/history/history.html" class="boxdesign">History</a>
-                    <a href="/development/Development.html" class="boxdesign"> Developments</a>
+                    <a href="/development/Development.html" class="boxdesign"> Improvements</a>
                     <a href="/structure/Structure.html" class="boxdesign">Structure</a>
                     <a href="/conc/conc.html" class="boxdesign">Conclusion</a>
                     <a href="https://icd.who.int/browse11/l-m/en" class="boxdesign">ICD-11 Browser</a>
+                </div>
             </aside>
         </div>
     </div>
-    </div>
-    
     <main>
         <header>
-    <h1>
-        <div class="wavyintro">
-        <span style="--i:1;">I</span>
-        <span style="--i:2;">n</span>
-        <span style="--i:3;">t</span>
-        <span style="--i:4;">r</span>
-        <span style="--i:5;">o</span>
-        <span style="--i:6;">d</span>
-        <span style="--i:7;">u</span>
-        <span style="--i:8;">c</span>
-        <span style="--i:9;">t</span>
-        <span style="--i:10;">i</span>
-        <span style="--i:11;">o</span>
-        <span style="--i:12;">n</span></div>
-    </h1>
-    <br>
-    
-    <div id="why" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom" >
-        <h2 >Why use ICD-11?</h2>
-    <img src="/images/drthinking.png" id="dr" width="25%"alt="dr">
-    </div>
-</header>
-<article>
-    <p id="p1"  data-aos="fade-right" data-aos-duration="1000">ICD serves a broad range of uses globally and provides critical knowledge on the extent,
-        causes and consequences of human disease and death worldwide via data that is reported
-        and coded with the ICD. Clinical terms coded with ICD are the main basis for health
-        recording and statistics on disease in primary, secondary and tertiary care, as well as on
-        cause of death certificates. These data and statistics support payment systems, service
-        planning, Administration of quality and safety, and health services research. Diagnostic
-        guidance linked to categories of ICD also standardizes data collection and enables large scale
-        research.</p> <br><br>
-    <p class="P" data-aos="fade-left" data-aos-duration="1000">For more than a century, the International Classification of Diseases (ICD) has been the
-        basis for comparable statistics on causes of mortality and morbidity between places and
-        over time. Originating in the 19th century, the latest version of the ICD, ICD-11, was adopted
-        by the 72nd World Health Assembly in 2019 and came into effect on 1st January 2022.</p><br>
-        <img id="table" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom" data-aos-delay="10000" src="/images/Untitled.png" alt="table" >
-    </article>
-    <a href="/history/history.html" id="next"> Next <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+            <h1 class="wavyintro">
+                <span style="--i:1;">I</span>
+                <span style="--i:2;">n</span>
+                <span style="--i:3;">t</span>
+                <span style="--i:4;">r</span>
+                <span style="--i:5;">o</span>
+                <span style="--i:6;">d</span>
+                <span style="--i:7;">u</span>
+                <span style="--i:8;">c</span>
+                <span style="--i:9;">t</span>
+                <span style="--i:10;">i</span>
+                <span style="--i:11;">o</span>
+                <span style="--i:12;">n</span>
+                </h1>
+                <img src="/images/anotherdrpic-removebg-preview.png" alt="dr" id="anotherdr">
+            <div id="ascrollicon"><a href="#why">Scroll Down<br>
+                    <i class="fa fa-angle-double-down" id="scrollicon" aria-hidden="true"></i></a>
+            </div>
+            <div id="why" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
+                <h2>Why use ICD-11?</h2>
+                <img src="/images/drthinking.png" id="dr" alt="dr">
+            </div>
+        </header>
+        <div id="article">
+            <p id="p1" data-aos="fade-right" data-aos-duration="1000">ICD serves a broad range of uses globally and
+                provides critical knowledge on the extent,
+                causes and consequences of human disease and death worldwide via data that is reported
+                and coded with the ICD. Clinical terms coded with ICD are the main basis for health
+                recording and statistics on disease in primary, secondary and tertiary care, as well as on
+                cause of death certificates. These data and statistics support payment systems, service
+                planning, Administration of quality and safety, and health services research. Diagnostic
+                guidance linked to categories of ICD also standardizes data collection and enables large scale
+                research.
+            </p>
+            <br><br>
+            <p class="P" data-aos="fade-left" data-aos-duration="1000">For more than a century, the International
+                Classification of Diseases (ICD) has been the
+                basis for comparable statistics on causes of mortality and morbidity between places and
+                over time. Originating in the 19th century, the latest version of the ICD, ICD-11, was adopted
+                by the 72nd World Health Assembly in 2019 and came into effect on 1st January 2022.
+            </p>
+            <br>
+            <img id="table" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom"
+                data-aos-delay="10000" src="/images/Untitled.png" alt="table">
+            <a href="/history/history.html" id="next"> Next<i class="fa fa-arrow-circle-right"
+                    aria-hidden="true"></i></a>
+        </div>
     </main>
 </body>
+
 </html>
